@@ -11,12 +11,16 @@ The main tools I used are Microsoft Excel, SQL and PowerBI.
 
 Here are the Quick links:
 
-Data Source: [divvy-tripdata]([https://yourlink.com](https://divvy-tripdata.s3.amazonaws.com/index.html))
+Data Source: [divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 
 SQL Queries:
 
-Data Visualizations: PowerBI
+1. [Prepare Data](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Prepare Data%3A Gathering and Organizing Data)
+2. [Process Data](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Process Data%3A Cleaning %26 Transforming Data)
 
 
-A more in-depth breakdown of the case study scenario is included below, followed by my full report.
+Data Visualizations: [PowerBI]()
+
+
+A more in-depth breakdown of the case study scenario is included below, followed by my [full report]().
