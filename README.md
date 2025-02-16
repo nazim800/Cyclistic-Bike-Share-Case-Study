@@ -20,7 +20,7 @@ SQL Queries:
 2. [Process Data](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Process Data%3A Cleaning %26 Transforming Data)
 
 
-Data Visualizations: [PowerBI]()
+Data Visualizations: [PowerBI](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Cyclistic Bike Share_Visualization.pdf)
 
 
 A more in-depth breakdown of the case study scenario is included below, followed by my [full report]().
