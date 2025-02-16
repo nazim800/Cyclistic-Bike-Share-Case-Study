@@ -1,0 +1,12 @@
+Mode_Day_of_Week = 
+VAR ModeTable = 
+    TOPN(1, 
+        SUMMARIZE(
+            'Raw Data', 
+            'Raw Data'[Day Name], 
+            "Count", 'Raw Data'[Day Name]
+        ), 
+        [Count], DESC
+    )
+RETURN
+    MAXX(ModeTable, 'Raw Data'[Day Name])
