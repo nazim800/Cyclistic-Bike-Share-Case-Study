@@ -5,10 +5,15 @@ How does a bike-share navigate speedy success?
 
 **Introduction**
 In this case study, I analyze historical data from a Chicago based bike-share company in order to identify trends in how their customers use bikes differently. In order to answer the key business questions, I will follow the steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.
+
 The main tools I used are Microsoft Excel, SQL and PowerBI. 
 
+
 Here are the Quick links:
-Data Source: https://divvy-tripdata.s3.amazonaws.com/index.html
+
+Data Source: [divvy-tripdata]([https://yourlink.com](https://divvy-tripdata.s3.amazonaws.com/index.html))
+
+
 SQL Queries:
 
 Data Visualizations: PowerBI
