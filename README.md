@@ -23,4 +23,4 @@ SQL Queries:
 Data Visualizations: [PowerBI](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Cyclistic Bike Share_Visualization.pdf)
 
 
-A more in-depth breakdown of the case study scenario is included below, followed by my [full report]().
+A more in-depth breakdown of the case study scenario is included below, followed by my [full report](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Cyclistic%20Bike%20Share%20Case%20Study_Final%20Report.pdf).
