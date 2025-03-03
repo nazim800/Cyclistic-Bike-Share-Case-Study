@@ -1,4 +1,4 @@
-# Cyclistic Bike Share Case Study using Spreadsheet, SQL, and Power BI  
+# Cyclistic Bike Share Case Study using Microsoft Excel, SQL, and Power BI  
 **How does a bike-share navigate speedy success?**  
 ![images](https://github.com/user-attachments/assets/9c8ff41c-dfe2-4715-bf8c-4a5f2c36da87)
 
