@@ -1,182 +1,196 @@
-# 🚲 Cyclistic Bike Share Case Study using Spreadsheet, SQL, and Power BI  
-* *How Does a Bike-Share Navigate Speedy Success?* *  
-![image](https://github.com/user-attachments/assets/a9149887-8d0d-4d6b-91ad-2b43592f6fa0)
+# Cyclistic Bike Share Case Study using Spreadsheet, SQL, and Power BI  
+**How does a bike-share navigate speedy success?**  
+![image](https://github.com/user-attachments/assets/08c7a108-81fd-46b6-9e71-e8eb4a32b2b0)
+
+## Introduction  
+In this case study, I analyze historical data from a Chicago-based bike-share company to identify trends in how their customers use bikes differently. To answer the key business questions, I will follow the steps of the data analysis process: **Ask, Prepare, Process, Analyze, Share, and Act**.  
+
+The main tools I used are **Microsoft Excel, SQL, and Power BI**.  
+
+### Quick Links  
+- **Data Source:** [divvy_tripdata](#)  
+- **SQL Queries:**  
+  1. Prepare Data  
+  2. Process Data  
+- **Data Visualizations:** Power BI  
+
+A more in-depth breakdown of the case study scenario is included below, followed by my full report.  
 
 ---
 
-## 📌 Introduction  
-In this case study, I analyze historical data from a **Chicago-based bike-share company** to identify trends in how customers use bikes differently.  
+## Scenario  
+As a junior data analyst on the marketing analyst team at Cyclistic, a bike-share company in Chicago, my role is to help uncover insights that drive business growth. The **Director of Marketing** believes that the key to the company’s future success lies in increasing the number of annual memberships.  
 
-### 🔍 **Objective**  
-To answer the key business questions, I follow the **Google Data Analytics** process:  
-**Ask → Prepare → Process → Analyze → Share → Act**.  
+To support this goal, my team is focused on analyzing how **casual riders and annual members** differ in their usage of Cyclistic bikes. By identifying key trends and patterns, we aim to develop an effective marketing strategy that encourages casual riders to become annual members.  
 
-### 🛠 **Tools Used**  
-- **Microsoft Excel** – Data structuring & analysis  
-- **SQL (MySQL / PostgreSQL)** – Data processing  
-- **Power BI** – Data visualization  
+Before implementing any strategy, our recommendations must be reviewed and approved by **Cyclistic’s executives**. To ensure a strong case, we will support our findings with **data-driven insights and professional visualizations** that clearly communicate the value of our proposed approach.  
 
 ---
 
-## 🔹 Quick Links  
+## Background  
+Cyclistic is a bike-share program that operates **5,800+ bicycles across 600 docking stations**. What sets Cyclistic apart is its commitment to inclusivity, offering:  
+- Traditional bikes  
+- Reclining bikes  
+- Hand tricycles  
+- Cargo bikes (for riders with disabilities)  
 
-📂 **Data Source**: [Divvy Trip Data](https://divvy-tripdata)  
+While **most users prefer traditional bikes**, about **8% opt for assistive options**. The majority of riders use Cyclistic for **leisure**, though **30% rely on it for commuting** to work.  
 
-📝 **SQL Queries**:  
-1. [Prepare Data](#)  
-2. [Process Data](#)  
+### Pricing Model  
+Cyclistic offers **three pricing plans**:  
+- **Single-ride passes**  
+- **Full-day passes**  
+- **Annual memberships**  
 
-📊 **Data Visualizations**: [Power BI Dashboard](#)  
+Customers using **single-ride or full-day passes** are classified as **casual riders**, while those who purchase **annual memberships** are considered **Cyclistic members**.  
 
-📄 **Full Case Study Report**: [View PDF](#)  
+### Business Challenge  
+Financial analysis has shown that **annual members** are significantly **more profitable** than casual riders. Instead of attracting **new customers**, the Director of Marketing believes that **converting casual riders into annual members** will be crucial for Cyclistic’s long-term success.  
 
----
-
-## 📖 Scenario  
-
-As a **junior data analyst** on the marketing team at **Cyclistic**, my role is to uncover insights that drive business growth.  
-
-The **Director of Marketing** believes that the key to Cyclistic’s future success lies in **increasing annual memberships**. My team is focused on analyzing how **casual riders** and **annual members** differ in their bike usage patterns.  
-
-The ultimate goal is to develop an effective marketing strategy that **converts casual riders into annual members**.  
-
-### 🌟 **Key Business Insights**  
-✅ **Cyclistic operates** over **5,800 bicycles** across **600 docking stations**.  
-✅ **Casual riders** use bikes for **leisure** (weekend peaks), while **annual members** use them for **commuting** (weekday consistency).  
-✅ **Annual members** are **more profitable** than casual riders.  
-✅ Converting **existing casual riders** into annual members is a **key growth opportunity**.  
+To achieve this goal, we need a **deeper understanding** of:  
+- How **casual riders** and **annual members** differ in their bike usage  
+- Why casual riders **might** buy a membership  
+- How **digital marketing strategies** could influence their decision  
 
 ---
 
-## 🔎 **Phase 1: Ask - Defining the Problem**  
+# Data Analysis Process  
 
-### 🎯 **Business Task**  
-✅ Devise **marketing strategies** to convert **casual riders into members**.  
+## Phase 1: Ask – Defining the Problem  
 
-### 🏢 **Key Stakeholders**  
-- **Director of Marketing** – Needs insights to shape campaigns.  
-- **Executive Team** – Requires **data-backed recommendations** to approve funding.  
-- **Marketing Analytics Team** – Supports analysis & implements findings.  
+### **Business Task**  
+**Devise marketing strategies to convert casual riders to members.**  
 
-### ❓ **Analysis Questions**  
+### **Key Stakeholders**  
+- **Director of Marketing** – Needs actionable insights to shape marketing campaigns.  
+- **Executive Team** – Requires data-backed recommendations to approve funding.  
+- **Marketing Analytics Team** – Supports your analysis and implements findings.  
+
+### **Analysis Questions**  
+Three key questions guide the marketing strategy:  
 1. **How do annual members and casual riders use Cyclistic bikes differently?**  
 2. **Why would casual riders buy Cyclistic annual memberships?**  
-3. **How can digital media influence casual riders to become members?**  
+3. **How can Cyclistic use digital media to influence casual riders to become members?**  
 
-📌 **Assigned Question:**  
-**How do annual members and casual riders use Cyclistic bikes differently?**  
-
----
-
-## 📊 **Phase 2: Prepare - Gathering & Organizing Data**  
-
-### 📂 **Data Source**  
-Cyclistic’s **historical trip data** (Jan 2024 – Dec 2024) from [Divvy Trip Data](https://divvy-tripdata).  
-
-🔹 **Data Privacy**: No personally identifiable information is included.  
-
-### 📑 **Data Organization**  
-The dataset consists of **12 monthly CSV files** with columns such as:  
-- `ride_id`, `rideable_type`, `started_at`, `ended_at`, `start_station_name`, `end_station_name`, `member_casual`.  
-
-### 📋 **Steps to Prepare Data**  
-1. **Download Data** – Obtain **12 months of trip data**.  
-2. **Organize Files** – Store in structured folders (`raw_data`, `processed_data`).  
-3. **Inspect Data** – Open in **Excel** to understand structure.  
-4. **Verify Credibility** – Ensure accuracy and licensing compliance.  
-
-### 🔗 **Combining Data Tables**  
-To merge all 12 months of data, I used **SQL (`UNION ALL`)** to consolidate them into one dataset.  
+**My assigned task:** Answer question #1 – How do annual members and casual riders use Cyclistic bikes differently?  
 
 ---
 
-## 🛠 **Phase 3: Process - Cleaning & Transforming Data**  
+## Phase 2: Prepare – Gather and Organize Data  
 
-### 🖥 **Data Cleaning in SQL Server (SSMS)**  
-✅ **Removed duplicate rows** to prevent skewed analysis.  
-✅ **Handled missing values** appropriately.  
-✅ **Validated data types** to ensure consistency.  
-✅ **Checked primary & foreign keys** for relational integrity.  
+### **Data Source**  
+I used **Cyclistic’s historical trip data** (Jan 2024 - Dec 2024), which can be downloaded from **divvy_tripdata**. The data is publicly available under a **Motivate International Inc.** license.  
 
-### 📝 **Documenting Data Cleaning**  
-- **Issues Identified:** Null values, duplicates, inconsistent formats.  
-- **SQL Queries Used:** Cleaning, filtering, and transforming data.  
-- **Final Validation:** Ensuring **data integrity** before analysis.  
+### **Data Organization**  
+There are **12 files** (one per month) with the naming convention: `YYYYMM-divvy-tripdata`. Each file contains:  
+- `ride_id` (Primary Key)  
+- `rideable_type`  
+- `started_at`, `ended_at`  
+- `start_station_name`, `end_station_name`  
+- `start_lat`, `start_lng`, `end_lat`, `end_lng`  
+- `member_casual`
+<img width="245" alt="image" src="https://github.com/user-attachments/assets/8a7efaf5-288b-48fe-b96c-d4bff3778e7c" />
 
-🔹 **Final Output**: Cleaned dataset exported to **CSV** for visualization.  
 
----
-
-## 📈 **Phase 4: Analyze - Identifying Trends**  
-
-📊 **Data imported into Power BI** for calculations & visualization.  
-
-### 🔢 **Key Calculations**  
-- **Average Ride Length**  
-- **Max Ride Length**  
-- **Most Frequent Ride Day (Mode Calculation - DAX Query)**  
-
-### 📋 **Key Findings**  
-
-1️⃣ **Ride Duration**  
-   - **Casual Riders**: 🚲 **25 min avg. ride** (Leisure-focused).  
-   - **Members**: 🚴‍♂️ **13 min avg. ride** (Commute-focused).  
-
-2️⃣ **Usage by Weekdays**  
-   - **Casual Riders**: Peak on **weekends** (Sat/Sun).  
-   - **Annual Members**: Consistent **weekday usage**.  
-
-3️⃣ **Total Rides by Weekday**  
-   - **Highest:** 🚴‍♂️ **Saturday (~0.94M rides)**.  
-   - **Lowest:** 🚲 **Monday (~0.78M rides)**.  
-
-4️⃣ **Usage by Rideable Type**  
-   - **Classic Bikes**: 🚴‍♂️ **23 min avg.** (Longer trips).  
-   - **Electric Bikes & Scooters**: ⚡ **12-14 min avg.** (Quick commutes).  
+### **Steps Taken**  
+✅ **Download & Organize Data**  
+✅ **Inspect Data** in Excel (structure, missing values, key columns)  
+✅ **Verify Data Credibility** (privacy, accuracy, consistency)  
 
 ---
 
-## 📊 **Phase 5: Share - Visualizing Report**  
+## Phase 3: Process – Cleaning & Transforming Data  
 
-### 📌 **Power BI Dashboard Insights**  
+### **Data Cleaning Process**  
+🔹 I used **SQL Server Management Studio (SSMS)** for efficient data cleaning and transformation.  
 
-📊 **Visualizations show clear differences between user types:**  
-✅ **Casual riders = leisure-focused** (weekend usage).  
-✅ **Annual members = commuter-focused** (weekday consistency).  
-✅ **Classic bikes dominate longer rides**, while **electric bikes/scooters = quick trips**.  
+✅ **Removed Duplicate Rows** 
+<img width="218" alt="image" src="https://github.com/user-attachments/assets/0cc7e9d2-b517-4a0e-ac85-f34750571220" />
+✅ **Checked for Missing Values**  
+<img width="237" alt="image" src="https://github.com/user-attachments/assets/9bcfa921-2842-49d4-932a-c15acf8b6fd8" />
+✅ **Validated Data Types**  
+✅ **Verified Primary & Foreign Keys**  
 
-🔹 **Data-Backed Implications**  
-- **Casual riders = weekend users** → Target **weekend promotions**.  
-- **Annual members = commuters** → Optimize **bike availability on weekdays**.  
-- **Electric bikes for quick trips** → Expand fleet in **urban commuter areas**.  
+### **Combining Data Tables**  
+I used the **UNION ALL** function in SQL to merge 12 months of trip data into one comprehensive table.  
+<img width="232" alt="image" src="https://github.com/user-attachments/assets/b20d83c0-1a8d-427d-b442-3e91d609f6ce" />
+
+✅ **Documented Every SQL Query**  
+✅ **Saved Cleaned Data as CSV**  
 
 ---
 
-## 🎯 **Phase 6: Act - Recommendations & Conclusion**  
+## Phase 4: Analyze – Identifying Trends  
 
-### 🔥 **Top 3 Recommendations for Cyclistic**  
+1. **Imported Cleaned CSV into Power BI**  
+<img width="470" alt="image" src="https://github.com/user-attachments/assets/4c7e0623-e362-4229-85f6-340ce65f6e43" />
 
+2. **Performed Calculations** (Ride Length, Day of the Week, Month, etc.)
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/f9f3c139-8aa1-4e23-bf44-3687fc05b167" />
+
+3. **DAX Query for Mode of Day**  
+<img width="282" alt="image" src="https://github.com/user-attachments/assets/e985a60a-cfe7-4995-9dcf-d95819a6a198" />
+
+
+4. **Created Visual Tables:**  
+   - **Average Ride Length** (Members vs. Casual Riders)
+   <img width="171" alt="image" src="https://github.com/user-attachments/assets/cc59943d-169d-4681-a026-ce13c23f40d2" />
+   - **Rides by Day of Week**
+   <img width="216" alt="image" src="https://github.com/user-attachments/assets/49edccc9-7647-4062-986b-5d4459cb2671" />
+   - **Total Rides by Weekday**
+   <img width="113" alt="image" src="https://github.com/user-attachments/assets/398b5f56-bfc2-4418-bdd9-6bec4792a8a9" />
+
+---
+
+## Phase 5: Share – Insights & Visualizing Report  
+
+### **Power BI Dashboard Highlights**  
+<img width="411" alt="image" src="https://github.com/user-attachments/assets/ab5ce59c-86b7-4cf7-90d5-0fc8bc9ef363" />
+
+📊 **Ride Duration:**  
+<img width="318" alt="image" src="https://github.com/user-attachments/assets/55dcf95f-6848-410c-97ad-8c4d3454e1cb" />
+- Casual Riders: **25 min avg. ride**  
+- Members: **13 min avg. ride**  
+
+📊 **Usage by Weekdays:**  
+<img width="374" alt="image" src="https://github.com/user-attachments/assets/b690b27c-b9ea-40b9-a10c-33ea788ca20d" />
+- Casual riders prefer **weekend rides** (Sat & Sun)  
+- Members maintain **consistent** weekday usage  
+
+📊 **Total Rides by Weekday:**  
+<img width="383" alt="image" src="https://github.com/user-attachments/assets/93108b14-67e4-4a0d-97a8-9f2683673be5" />
+- **Peak:** Saturday (~0.94M rides)  
+- **Lowest:** Monday (~0.78M rides)  
+
+📊 **Usage by Ride Type:**
+<img width="383" alt="image" src="https://github.com/user-attachments/assets/664867fd-4073-46e9-81da-71eb733cbfa5" />
+- **Classic Bikes:** 23 min avg.  
+- **Electric Bikes:** 12.4 min avg.  
+- **Scooters:** 10.4 min avg.  
+
+📊 **Bike Type Preference:**  
+<img width="354" alt="image" src="https://github.com/user-attachments/assets/b4dda527-3745-43bf-836e-a93b2207652d" />
+- **Classic Bikes:** 50%  
+- **Electric Bikes:** 46.7%  
+- **Scooters:** 2.5%  
+
+---
+
+## Phase 6: Act – Recommendations & Conclusion  
+
+### **Top 3 Recommendations**  
 1️⃣ **Introduce a "Weekend Membership Plan"**  
-   - Casual riders **prefer weekends** → Offer **weekend-based membership plans**.  
+   - Casual riders primarily ride on weekends.  
+   - Offer **weekend-specific discounts** or a **limited-time membership**.  
 
 2️⃣ **Enhance Bike Availability Based on Demand**  
-   - Increase **classic bikes on weekends** (high leisure demand).  
-   - Deploy **more electric bikes in commuter areas**.  
+   - **More classic bikes** at high-demand stations (weekends).  
+   - **More electric bikes** in commuter-heavy areas (weekdays).  
 
-3️⃣ **Targeted Digital Marketing for Conversion**  
-   - **Push notifications** to casual riders with **membership perks**.  
-   - **Offer discounts** for **first-time membership sign-ups**.  
-
+3️⃣ **Targeted Digital Marketing to Convert Casual Riders**  
+   - **App notifications & email offers** after casual rides.  
+   - **"First-month free" or seasonal discounts** to encourage sign-ups.  
 ---
-
-## 📌 **Conclusion**  
-
-🔹 **Casual riders represent a key conversion opportunity.**  
-🔹 **Targeted marketing & optimized pricing plans** can **boost memberships**.  
-🔹 **Cyclistic should focus on incentives** that align with **riding habits**.  
-
-🚀 **With data-driven insights, Cyclistic can increase revenue & user engagement!**  
-
----
-
-Let me know if you need any refinements! 🚴‍♂️✨  
+### **Conclusion**  
+Casual riders represent a **significant conversion opportunity**.  
+📢 **Targeted marketing efforts should focus on incentives that match their riding habits!** 🚴  
