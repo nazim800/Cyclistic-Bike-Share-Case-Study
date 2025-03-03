@@ -1,6 +1,6 @@
 # Cyclistic Bike Share Case Study using Spreadsheet, SQL, and Power BI  
 **How does a bike-share navigate speedy success?**  
-![image](https://github.com/user-attachments/assets/08c7a108-81fd-46b6-9e71-e8eb4a32b2b0)
+![images](https://github.com/user-attachments/assets/9c8ff41c-dfe2-4715-bf8c-4a5f2c36da87)
 
 ## Introduction  
 In this case study, I analyze historical data from a Chicago-based bike-share company to identify trends in how their customers use bikes differently. To answer the key business questions, I will follow the steps of the data analysis process: **Ask, Prepare, Process, Analyze, Share, and Act**.  
