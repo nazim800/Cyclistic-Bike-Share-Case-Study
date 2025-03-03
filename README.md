@@ -155,28 +155,38 @@ I used the **UNION ALL** function in SQL to merge 12 months of trip data into on
 <img width="411" alt="image" src="https://github.com/user-attachments/assets/ab5ce59c-86b7-4cf7-90d5-0fc8bc9ef363" />
 
 📊 **Ride Duration:**  
+
 <img width="318" alt="image" src="https://github.com/user-attachments/assets/55dcf95f-6848-410c-97ad-8c4d3454e1cb" />
+
 - Casual Riders: **25 min avg. ride**  
 - Members: **13 min avg. ride**  
 
 📊 **Usage by Weekdays:**  
+
 <img width="374" alt="image" src="https://github.com/user-attachments/assets/b690b27c-b9ea-40b9-a10c-33ea788ca20d" />
+
 - Casual riders prefer **weekend rides** (Sat & Sun)  
 - Members maintain **consistent** weekday usage  
 
 📊 **Total Rides by Weekday:**  
+
 <img width="383" alt="image" src="https://github.com/user-attachments/assets/93108b14-67e4-4a0d-97a8-9f2683673be5" />
+
 - **Peak:** Saturday (~0.94M rides)  
 - **Lowest:** Monday (~0.78M rides)  
 
 📊 **Usage by Ride Type:**
+
 <img width="383" alt="image" src="https://github.com/user-attachments/assets/664867fd-4073-46e9-81da-71eb733cbfa5" />
+
 - **Classic Bikes:** 23 min avg.  
 - **Electric Bikes:** 12.4 min avg.  
 - **Scooters:** 10.4 min avg.  
 
 📊 **Bike Type Preference:**  
+
 <img width="354" alt="image" src="https://github.com/user-attachments/assets/b4dda527-3745-43bf-836e-a93b2207652d" />
+
 - **Classic Bikes:** 50%  
 - **Electric Bikes:** 46.7%  
 - **Scooters:** 2.5%  
