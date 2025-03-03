@@ -9,13 +9,13 @@ In this case study, I analyze historical data from a Chicago-based bike-share co
 The main tools I used are **Microsoft Excel, SQL, and Power BI**.  
 
 ### Quick Links  
-- **Data Source:** [divvy_tripdata](#)  
+- **Data Source:** [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)  
 - **SQL Queries:**  
-  1. Prepare Data  
-  2. Process Data  
-- **Data Visualizations:** Power BI  
+  1. [Prepare Data](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Prepare%20Data%3A%20Gathering%20and%20Organizing%20Data.sql)  
+  2. [Process Data](https://github.com/nazim800/Cyclistic-Bike-Share-Case-Study/blob/main/Process%20Data%3A%20Cleaning%20%26%20Transforming%20Data.sql)
+- **Data Visualizations:** [Power BI Report](https://drive.google.com/file/d/1vEsGIJ5vIzH1VwP7J3JDYidcm2CKx2ck/view?usp=share_link) 
 
-A more in-depth breakdown of the case study scenario is included below, followed by my full report.  
+A more in-depth breakdown of the case study scenario is included below, followed by my [full report](https://drive.google.com/file/d/1yYHBa_VInSxs_rqUEXbVHXBBjIZR_ujW/view?usp=sharing).  
 
 ---
 
@@ -140,8 +140,10 @@ I used the **UNION ALL** function in SQL to merge 12 months of trip data into on
 4. **Created Visual Tables:**  
    - **Average Ride Length** (Members vs. Casual Riders)
    <img width="171" alt="image" src="https://github.com/user-attachments/assets/cc59943d-169d-4681-a026-ce13c23f40d2" />
+   
    - **Rides by Day of Week**
    <img width="216" alt="image" src="https://github.com/user-attachments/assets/49edccc9-7647-4062-986b-5d4459cb2671" />
+   
    - **Total Rides by Weekday**
    <img width="113" alt="image" src="https://github.com/user-attachments/assets/398b5f56-bfc2-4418-bdd9-6bec4792a8a9" />
 
