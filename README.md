@@ -107,18 +107,18 @@ There are **12 files** (one per month) with the naming convention: `YYYYMM-divvy
 
 ✅ **Removed Duplicate Rows** 
 
-<img width="218" alt="image" src="https://github.com/user-attachments/assets/0cc7e9d2-b517-4a0e-ac85-f34750571220" />
+  <img width="218" alt="image" src="https://github.com/user-attachments/assets/0cc7e9d2-b517-4a0e-ac85-f34750571220" />
 
 ✅ **Checked for Missing Values**  
 
-<img width="237" alt="image" src="https://github.com/user-attachments/assets/9bcfa921-2842-49d4-932a-c15acf8b6fd8" />
+  <img width="237" alt="image" src="https://github.com/user-attachments/assets/9bcfa921-2842-49d4-932a-c15acf8b6fd8" />
 
 ✅ **Validated Data Types**  
 ✅ **Verified Primary & Foreign Keys**  
 
 ### **Combining Data Tables**  
 I used the **UNION ALL** function in SQL to merge 12 months of trip data into one comprehensive table.  
-<img width="232" alt="image" src="https://github.com/user-attachments/assets/b20d83c0-1a8d-427d-b442-3e91d609f6ce" />
+  <img width="232" alt="image" src="https://github.com/user-attachments/assets/b20d83c0-1a8d-427d-b442-3e91d609f6ce" />
 
 ✅ **Documented Every SQL Query**  
 ✅ **Saved Cleaned Data as CSV**  
@@ -128,56 +128,56 @@ I used the **UNION ALL** function in SQL to merge 12 months of trip data into on
 ## Phase 4: Analyze – Identifying Trends  
 
 1. **Imported Cleaned CSV into Power BI**  
-<img width="470" alt="image" src="https://github.com/user-attachments/assets/4c7e0623-e362-4229-85f6-340ce65f6e43" />
+  <img width="470" alt="image" src="https://github.com/user-attachments/assets/4c7e0623-e362-4229-85f6-340ce65f6e43" />
 
 2. **Performed Calculations** (Ride Length, Day of the Week, Month, etc.)
-<img width="455" alt="image" src="https://github.com/user-attachments/assets/f9f3c139-8aa1-4e23-bf44-3687fc05b167" />
+  <img width="455" alt="image" src="https://github.com/user-attachments/assets/f9f3c139-8aa1-4e23-bf44-3687fc05b167" />
 
 3. **DAX Query for Mode of Day**  
-<img width="282" alt="image" src="https://github.com/user-attachments/assets/e985a60a-cfe7-4995-9dcf-d95819a6a198" />
+  <img width="282" alt="image" src="https://github.com/user-attachments/assets/e985a60a-cfe7-4995-9dcf-d95819a6a198" />
 
 
 4. **Created Visual Tables:**  
    - **Average Ride Length** (Members vs. Casual Riders)
-   <img width="171" alt="image" src="https://github.com/user-attachments/assets/cc59943d-169d-4681-a026-ce13c23f40d2" />
+     <img width="171" alt="image" src="https://github.com/user-attachments/assets/cc59943d-169d-4681-a026-ce13c23f40d2" />
    
    - **Rides by Day of Week**
-   <img width="216" alt="image" src="https://github.com/user-attachments/assets/49edccc9-7647-4062-986b-5d4459cb2671" />
+     <img width="216" alt="image" src="https://github.com/user-attachments/assets/49edccc9-7647-4062-986b-5d4459cb2671" />
    
    - **Total Rides by Weekday**
-   <img width="113" alt="image" src="https://github.com/user-attachments/assets/398b5f56-bfc2-4418-bdd9-6bec4792a8a9" />
+     <img width="113" alt="image" src="https://github.com/user-attachments/assets/398b5f56-bfc2-4418-bdd9-6bec4792a8a9" />
 
 ---
 
 ## Phase 5: Share – Insights & Visualizing Report  
 
 ### **Power BI Dashboard Highlights**  
-<img width="411" alt="image" src="https://github.com/user-attachments/assets/ab5ce59c-86b7-4cf7-90d5-0fc8bc9ef363" />
+  <img width="411" alt="image" src="https://github.com/user-attachments/assets/ab5ce59c-86b7-4cf7-90d5-0fc8bc9ef363" />
 
 📊 **Ride Duration:**  
 
-<img width="318" alt="image" src="https://github.com/user-attachments/assets/55dcf95f-6848-410c-97ad-8c4d3454e1cb" />
+  <img width="318" alt="image" src="https://github.com/user-attachments/assets/55dcf95f-6848-410c-97ad-8c4d3454e1cb" />
 
 - Casual Riders: **25 min avg. ride**  
 - Members: **13 min avg. ride**  
 
 📊 **Usage by Weekdays:**  
 
-<img width="374" alt="image" src="https://github.com/user-attachments/assets/b690b27c-b9ea-40b9-a10c-33ea788ca20d" />
+  <img width="374" alt="image" src="https://github.com/user-attachments/assets/b690b27c-b9ea-40b9-a10c-33ea788ca20d" />
 
 - Casual riders prefer **weekend rides** (Sat & Sun)  
 - Members maintain **consistent** weekday usage  
 
 📊 **Total Rides by Weekday:**  
 
-<img width="383" alt="image" src="https://github.com/user-attachments/assets/93108b14-67e4-4a0d-97a8-9f2683673be5" />
+  <img width="383" alt="image" src="https://github.com/user-attachments/assets/93108b14-67e4-4a0d-97a8-9f2683673be5" />
 
 - **Peak:** Saturday (~0.94M rides)  
 - **Lowest:** Monday (~0.78M rides)  
 
 📊 **Usage by Ride Type:**
 
-<img width="383" alt="image" src="https://github.com/user-attachments/assets/664867fd-4073-46e9-81da-71eb733cbfa5" />
+  <img width="383" alt="image" src="https://github.com/user-attachments/assets/664867fd-4073-46e9-81da-71eb733cbfa5" />
 
 - **Classic Bikes:** 23 min avg.  
 - **Electric Bikes:** 12.4 min avg.  
@@ -185,7 +185,7 @@ I used the **UNION ALL** function in SQL to merge 12 months of trip data into on
 
 📊 **Bike Type Preference:**  
 
-<img width="354" alt="image" src="https://github.com/user-attachments/assets/b4dda527-3745-43bf-836e-a93b2207652d" />
+  <img width="354" alt="image" src="https://github.com/user-attachments/assets/b4dda527-3745-43bf-836e-a93b2207652d" />
 
 - **Classic Bikes:** 50%  
 - **Electric Bikes:** 46.7%  
