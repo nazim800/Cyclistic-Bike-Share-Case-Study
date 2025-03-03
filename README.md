@@ -107,8 +107,10 @@ There are **12 files** (one per month) with the naming convention: `YYYYMM-divvy
 
 ✅ **Removed Duplicate Rows** 
 <img width="218" alt="image" src="https://github.com/user-attachments/assets/0cc7e9d2-b517-4a0e-ac85-f34750571220" />
+
 ✅ **Checked for Missing Values**  
 <img width="237" alt="image" src="https://github.com/user-attachments/assets/9bcfa921-2842-49d4-932a-c15acf8b6fd8" />
+
 ✅ **Validated Data Types**  
 ✅ **Verified Primary & Foreign Keys**  
 
