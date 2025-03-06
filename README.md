@@ -139,12 +139,15 @@ I used the **UNION ALL** function in SQL to merge 12 months of trip data into on
 
 4. **Created Visual Tables:**  
    - **Average Ride Length** (Members vs. Casual Riders)
+     
      <img width="171" alt="image" src="https://github.com/user-attachments/assets/cc59943d-169d-4681-a026-ce13c23f40d2" />
    
    - **Rides by Day of Week**
+     
      <img width="216" alt="image" src="https://github.com/user-attachments/assets/49edccc9-7647-4062-986b-5d4459cb2671" />
    
    - **Total Rides by Weekday**
+     
      <img width="113" alt="image" src="https://github.com/user-attachments/assets/398b5f56-bfc2-4418-bdd9-6bec4792a8a9" />
 
 ---
